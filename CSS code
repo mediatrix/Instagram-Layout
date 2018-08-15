@@ -1,0 +1,227 @@
+<html>
+<head>
+    <style>
+        @media screen and (min-width: 50px) {
+        h4 {
+            font-family: arial; font-size: 25px;
+            padding-left: 15px;
+            padding-top: 25px;
+        }     
+        
+        .heading {
+            display: grid;
+            border-top-style: solid;
+            border-top-color: silver;
+            border-top-width: 1px;
+            grid-template-columns: 1.5fr 1fr 1fr 1fr;
+            grid-template-rows: 1.15fr 1fr 1fr;
+            grid-auto-columns: 100px;
+            grid-auto-rows: 100px;
+            grid-column-gap: 5px;
+            grid-row-gap: 10px;
+            padding-top: 25px;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: white;
+            grid-template-areas: 
+            "area1 area2 area3 area4"
+            "area1 area5 area5 area5"
+            "area6 area6 area6 area6"
+            ;
+            border-bottom-style: solid;
+            border-bottom-color: silver;
+            border-bottom-width: 1px;
+        }
+
+        #profilepicture {
+            grid-area: area1;
+            position: relative;
+        }
+        
+        .img-circle {
+           max-width: 100%;
+           height: auto;
+           width: auto\9;
+           border-radius: 50%;
+           border: 2px solid silver;
+           left: 0px;
+           right: 0px;
+           position: absolute;
+           top: 0px;
+           bottom: 0px;
+           margin: auto;     
+           width: 250px;
+           height: 250px;      
+        }
+
+        #post {
+            grid-area: area2;
+        }
+
+        #postnumber, #followernumber, #followingnumber  {
+            color: black;
+            font-family: Arial;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            padding-top: 35px;
+        }
+
+        #posts, #followers, #following {
+            color: silver;
+            font-family: arial;
+            font-size: 20px;
+            text-align: center;
+            vertical-align: bottom;
+        }
+
+        #follower {
+            grid-area: area3;
+        }
+
+        #following {
+            grid-area: area4;
+        }
+
+        #editprofile {
+            grid-area: area5;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-family: arial;
+            vertical-align: middle;
+            border-radius: 25px;
+            padding: 30px;
+            border: 2px solid silver;
+        }
+
+        #about {
+            grid-area: area6;
+            font-family: arial;
+            font-size: 14px;
+            text-align: left;
+            text-overflow: ellipsis;
+            max-width: 800;
+            padding-bottom: 25px;
+        }
+
+        .insta {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: auto;
+            grid-auto-rows: auto;
+            padding-top: 5px;
+            padding-left: 5px;
+            padding-right: 5px;
+            max-height: max-content;
+            position: relative;
+        }
+
+        .img {
+            height: 425px;
+            width: 425px;
+            position: relative;
+            overflow: hidden;
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        
+        .foot {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: silver;
+            text-align: right;
+            font-family: Arial;
+            font-size: 10px;
+        }
+        }
+        
+    </style>
+    <!-- replace the "Insta ID" text below with your prefer Insta ID name-->
+    <title>Insta ID</title>
+</head>
+
+<body>
+    <!-- replace the "Insta ID" text below with your prefer Insta ID name-->
+    <h4>fernweh.state</h4>
+
+    <div class="heading">
+        <div id="profilepicture">
+            <!--change the link source with the picture that you want to use for your avatar between the quotes below-->
+            <img class="img-circle" src="https://pickaface.net/gallery/avatar/cloud34522ec7ee043db.png">
+        </div>
+        <div id="post">
+            <!-- replace the "insert number of post" text below with your prefer number of posts -->
+            <div id="postnumber">111</div>
+            <div id="posts">posts</div>
+        </div>
+        <div id="follower">
+            <!-- replace the "insert number of follower" text below with your prefer number of followers -->
+            <div id="followernumber">123</div>
+            <div id="followers">followers</div>
+        </div>
+        <div id="following">
+            <!-- replace the "insert number of people that you follow" text below with your prefer number of people that you're following -->
+            <div id="followingnumber">110</div>
+            <div id="following">following</div>
+        </div>
+        <div id="editprofile">
+            <p>Edit Profile</p>
+        </div>
+        <div id="about">
+            <!-- insert some text below -->
+            <p>insert some text</p>
+            <p>insert some text</p>
+            <p>insert some text</p>
+        </div>
+    </div>
+    
+    <div class="insta">
+        <div id="pic1">
+            <!--change the link source with the picture that you want to use for your instagram picture between the quotes below-->
+            <img class="img" src="http://cache.lovethispic.com/uploaded_images/blogs/16-Of-The-Best-Girly-Quotes-And-Sayings-5213-8.png">
+        </div>
+        <div id="pic2">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://data.whicdn.com/images/286019270/large.jpg">
+        </div>
+        <div id="pic3">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://www.everywishes.com/wp-content/uploads/2017/07/30-Best-Sassy-Quotes-for-Your-Instagram-6-Sassy-Sassy-Quotes.jpg">
+            </div>
+        <div id="pic4">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://www.designbold.com/blog/wp-content/uploads/instagram-post-quotes-5.png">
+        </div>
+        <div id="pic5">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://i2.wp.com/techywhale.com/wp-content/uploads/2018/03/a16a8c40a60e88f2e800d6847f5657d5-girlboss-quote-woman-empowerment-quotes.jpg?w=474&ssl=1">
+        </div>
+        <div id="pic6">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://www.designbold.com/blog/wp-content/uploads/instagram-post-quotes-8.png">
+        </div>
+        <div id="pic7">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://i.pinimg.com/564x/74/73/8f/74738fd452e81f0b7ca1875a5b96a869.jpg">
+        </div>
+        <div id="pic8">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://i.pinimg.com/564x/b9/32/eb/b932eb851818af648025e9a8c49f2669.jpg">
+        </div>
+        <div id="pic9">
+            <!--change the link source with the picture that you want to use for your avatart between the quotes below-->
+            <img class="img" src="https://i.pinimg.com/564x/b2/8d/87/b28d870393f3385b893c070cc1bdf7c0.jpg">
+        </div>
+    </div>
+
+    <div class="foot">
+        <p>&copy Mediatrix</p>
+    </div>
+</body>
+</html>
